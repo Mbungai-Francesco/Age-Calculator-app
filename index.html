@@ -6,16 +6,43 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Age calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Age calculator app</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
 </head>
 <body>
-
-  
+  <main>
+    <div class="top">
+      <div class="inputGroup">
+        <label>
+          <p>DAY</p>
+          <input type="text" class="indates" placeholder="DD" min="1" max="7">
+        </label>
+        <label>
+          <p>MONTH</p>
+          <input type="text" class="indates" placeholder="MM" min="1" max="12">
+        </label>
+        <label>
+          <p>YEAR</p>
+          <input type="text" class="indates" placeholder="YYYY" min="1">
+        </label>
+      </div>
+      <div class="topBtn">
+        <div class="hr"></div>
+        <button class="btn"></button>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="outdates">
+        <p><span class="num"></span>years</p>
+      </div>
+      <div class="outdates">
+        <p><span class="num"></span>months</p>
+      </div>
+      <div class="outdates">
+        <p><span class="num"></span>days</p>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

@@ -1,0 +1,89 @@
+*
+  font-family: 'Poppins', sans-serif
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  
+// ### Primary
+$Purple: hsl(259, 100%, 65%)
+$Light-red: hsl(0, 100%, 67%)
+
+// ### Neutral
+$White: hsl(0, 0%, 100%)
+$Off-white: hsl(0, 0%, 94%)
+$Light-grey: hsl(0, 0%, 86%)
+$Smokey-grey: hsl(0, 1%, 44%)
+$Off-black: hsl(0, 0%, 8%)
+$border-col: #8080803d
+
+body
+  background-color: $Light-grey
+  width: 100%
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+main
+  background-color: $White
+  height: 65vh
+  aspect-ratio: 1.2 / 1
+  display: flex
+  flex-direction: column
+  align-items: center
+  border-radius: 25px
+  padding: 2rem
+  border-bottom-right-radius: 30%
+  .top
+    background-color: pink
+    width: 100%
+    .inputGroup
+      display: flex
+      label
+        margin-right: 1rem
+        p
+          font-size: .8rem
+          color: $Smokey-grey
+          font-weight: 600
+          margin-bottom: .3rem
+        input
+          font-weight: 700
+          font-size: 1.5em
+          padding: .5em .7em 
+          width: 5em
+          border: 1px solid $border-col
+          color: $Smokey-grey
+          border-radius: 5px
+          outline-color: #28282873
+          &::placeholder
+            color:#716f6fd6
+    .topBtn
+      display: flex
+      align-items: center
+      .hr
+        width: 80%
+        height: 1px
+        background-color: $border-col
+        margin: 1rem 0
+      .btn
+        background-color: $Purple
+        color: $White
+        width: 6em
+        aspect-ratio: 1 / 1
+        border: 0
+        border-radius: 50%
+        font-weight: 600
+        cursor: pointer
+        transition: background-color .3s
+        &:hover
+          background-color: $Light-red
+
+
+
+
+.attribution 
+  font-size: 11px
+  text-align: center
+.attribution a  
+  color: hsl(228, 45%, 44%)

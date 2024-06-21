@@ -1,0 +1,92 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 86%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  height: 65vh;
+  aspect-ratio: 1.2/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  padding: 2rem;
+  border-bottom-right-radius: 30%;
+}
+main .top {
+  background-color: pink;
+  width: 100%;
+}
+main .top .inputGroup {
+  display: flex;
+}
+main .top .inputGroup label {
+  margin-right: 1rem;
+}
+main .top .inputGroup label p {
+  font-size: 0.8rem;
+  color: hsl(0, 1%, 44%);
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+main .top .inputGroup label input {
+  font-weight: 700;
+  font-size: 1.5em;
+  padding: 0.5em 0.7em;
+  width: 5em;
+  border: 1px solid rgba(128, 128, 128, 0.2392156863);
+  color: hsl(0, 1%, 44%);
+  border-radius: 5px;
+  outline-color: rgba(40, 40, 40, 0.4509803922);
+}
+main .top .inputGroup label input::placeholder {
+  color: rgba(113, 111, 111, 0.8392156863);
+}
+main .top .topBtn {
+  display: flex;
+  align-items: center;
+}
+main .top .topBtn .hr {
+  width: 80%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.2392156863);
+  margin: 1rem 0;
+}
+main .top .topBtn .btn {
+  background-color: hsl(259, 100%, 65%);
+  color: hsl(0, 0%, 100%);
+  width: 6em;
+  aspect-ratio: 1/1;
+  border: 0;
+  border-radius: 50%;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+main .top .topBtn .btn:hover {
+  background-color: hsl(0, 100%, 67%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# sourceMappingURL=style.css.map */
