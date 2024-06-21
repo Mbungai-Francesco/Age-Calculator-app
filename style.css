@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+main .top .inputGroup label .err, main .top .inputGroup label .err2, main .top .inputGroup label .err3, main .top #toperr {
+  display: none;
+  color: hsl(0, 100%, 67%);
+}
+
 body {
   background-color: hsl(0, 0%, 86%);
   width: 100%;
@@ -17,8 +22,8 @@ body {
 
 main {
   background-color: hsl(0, 0%, 100%);
-  height: 65vh;
-  aspect-ratio: 1.2/1;
+  height: fit-content;
+  aspect-ratio: 1.1/1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,14 +32,13 @@ main {
   border-bottom-right-radius: 30%;
 }
 main .top {
-  background-color: pink;
   width: 100%;
 }
 main .top .inputGroup {
   display: flex;
 }
 main .top .inputGroup label {
-  margin-right: 1rem;
+  margin-right: 1.2rem;
 }
 main .top .inputGroup label p {
   font-size: 0.8rem;
@@ -49,7 +53,7 @@ main .top .inputGroup label input {
   width: 5em;
   border: 1px solid rgba(128, 128, 128, 0.2392156863);
   color: hsl(0, 1%, 44%);
-  border-radius: 5px;
+  border-radius: 8px;
   outline-color: rgba(40, 40, 40, 0.4509803922);
 }
 main .top .inputGroup label input::placeholder {
@@ -66,9 +70,12 @@ main .top .topBtn .hr {
   margin: 1rem 0;
 }
 main .top .topBtn .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: hsl(259, 100%, 65%);
   color: hsl(0, 0%, 100%);
-  width: 6em;
+  width: 5.5em;
   aspect-ratio: 1/1;
   border: 0;
   border-radius: 50%;
@@ -76,8 +83,21 @@ main .top .topBtn .btn {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-main .top .topBtn .btn:hover {
-  background-color: hsl(0, 100%, 67%);
+main .top .topBtn .btn svg {
+  padding: 5px;
+}
+main .bottom {
+  width: 100%;
+}
+main .bottom .outdates p {
+  font-size: 5rem;
+  color: hsl(0, 0%, 8%);
+  font-style: italic;
+  font-weight: 800;
+}
+main .bottom .outdates p span {
+  color: hsl(259, 100%, 65%);
+  margin-right: 0.2em;
 }
 
 .attribution {

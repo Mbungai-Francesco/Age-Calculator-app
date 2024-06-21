@@ -16,6 +16,10 @@ $Smokey-grey: hsl(0, 1%, 44%)
 $Off-black: hsl(0, 0%, 8%)
 $border-col: #8080803d
 
+%forErr
+  display: none
+  color: $Light-red
+
 body
   background-color: $Light-grey
   width: 100%
@@ -27,8 +31,8 @@ body
 
 main
   background-color: $White
-  height: 65vh
-  aspect-ratio: 1.2 / 1
+  height: fit-content
+  aspect-ratio: 1.1 / 1
   display: flex
   flex-direction: column
   align-items: center
@@ -36,12 +40,14 @@ main
   padding: 2rem
   border-bottom-right-radius: 30%
   .top
-    background-color: pink
+    // background-color: pink
     width: 100%
+    #toperr
+      @extend %forErr
     .inputGroup
       display: flex
       label
-        margin-right: 1rem
+        margin-right: 1.2rem
         p
           font-size: .8rem
           color: $Smokey-grey
@@ -54,10 +60,12 @@ main
           width: 5em
           border: 1px solid $border-col
           color: $Smokey-grey
-          border-radius: 5px
+          border-radius: 8px
           outline-color: #28282873
           &::placeholder
             color:#716f6fd6
+        .err,.err2,.err3
+          @extend %forErr
     .topBtn
       display: flex
       align-items: center
@@ -67,9 +75,12 @@ main
         background-color: $border-col
         margin: 1rem 0
       .btn
+        display: flex
+        align-items: center
+        justify-content: center
         background-color: $Purple
         color: $White
-        width: 6em
+        width: 5.5em
         aspect-ratio: 1 / 1
         border: 0
         border-radius: 50%
@@ -77,8 +88,22 @@ main
         cursor: pointer
         transition: background-color .3s
         &:hover
-          background-color: $Light-red
-
+          // background-color: $Light-red
+        svg
+          padding: 5px
+  .bottom
+    width: 100%
+    .outdates
+      p
+        font-size: 5rem
+        color: $Off-black
+        font-style: italic
+        font-weight: 800
+        // margin-bottom: 1rem
+        span
+          // font-size: 6rem
+          color: $Purple
+          margin-right: .2em
 
 
 

@@ -8,39 +8,52 @@
   
   <title>Age calculator app</title>
   <link rel="stylesheet" href="./style.css">
+
+  <script src="./jquery.js"></script>
+  <script src="./moment/min/moment.min.js"></script>
   <script src="./app.js" defer></script>
 </head>
 <body>
   <main>
     <div class="top">
+      <p id="toperr">Not born yet</p>
       <div class="inputGroup">
         <label>
           <p>DAY</p>
           <input type="text" class="indates" placeholder="DD" min="1" max="7">
+          <p class="err">This field is required</p>
+          <p class="err2">Most be a valid day</p>
+          <p class="err3">Most be a valid date</p>
         </label>
         <label>
           <p>MONTH</p>
           <input type="text" class="indates" placeholder="MM" min="1" max="12">
+          <p class="err">This field is required</p>
+          <p class="err2">Most be a valid month</p>
         </label>
         <label>
           <p>YEAR</p>
           <input type="text" class="indates" placeholder="YYYY" min="1">
+          <p class="err">This field is required</p>
+          <p class="err2">Most be in the past</p>
         </label>
       </div>
       <div class="topBtn">
         <div class="hr"></div>
-        <button class="btn"></button>
+        <button class="btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </button>
       </div>
     </div>
     <div class="bottom">
       <div class="outdates">
-        <p><span class="num"></span>years</p>
+        <p><span class="num">--</span>years</p>
       </div>
       <div class="outdates">
-        <p><span class="num"></span>months</p>
+        <p><span class="num">--</span>months</p>
       </div>
       <div class="outdates">
-        <p><span class="num"></span>days</p>
+        <p><span class="num">--</span>days</p>
       </div>
     </div>
   </main>
