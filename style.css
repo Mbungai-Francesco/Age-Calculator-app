@@ -88,7 +88,10 @@ main .top .topBtn .btn {
   border-radius: 50%;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s;
+}
+main .top .topBtn .btn:hover {
+  background-color: hsl(0, 0%, 8%);
 }
 main .top .topBtn .btn svg {
   padding: 5px;
@@ -136,8 +139,11 @@ main .bottom .outdates p span {
     width: 100%;
   }
   main .top .topBtn .btn {
-    width: 5em;
+    width: 4em;
     position: absolute;
+  }
+  main .top .topBtn .btn svg {
+    padding: 8px;
   }
   main .bottom .outdates p {
     font-size: 3rem;
