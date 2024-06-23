@@ -37,6 +37,12 @@ main .top {
 main .top .inputGroup {
   display: flex;
 }
+main .top .inputGroup label.turnRed p {
+  color: hsl(0, 100%, 67%);
+}
+main .top .inputGroup label.turnRed input {
+  border-color: hsl(0, 100%, 67%);
+}
 main .top .inputGroup label {
   margin-right: 1.2rem;
 }
@@ -62,6 +68,7 @@ main .top .inputGroup label input::placeholder {
 main .top .topBtn {
   display: flex;
   align-items: center;
+  position: relative;
 }
 main .top .topBtn .hr {
   width: 80%;

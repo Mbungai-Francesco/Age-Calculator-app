@@ -46,6 +46,11 @@ main
       @extend %forErr
     .inputGroup
       display: flex
+      label.turnRed
+        p
+          color: $Light-red
+        input
+          border-color: $Light-red
       label
         margin-right: 1.2rem
         p
@@ -69,6 +74,7 @@ main
     .topBtn
       display: flex
       align-items: center
+      position: relative
       .hr
         width: 80%
         height: 1px
@@ -104,6 +110,41 @@ main
           // font-size: 6rem
           color: $Purple
           margin-right: .2em
+// @media (max-width: 700px)
+//   main
+//     width: 90%
+//     padding: 1em
+//     .top
+//       .inputGroup
+//         justify-content: space-between
+//         margin-bottom: 2em
+//         label
+//           width: 30%
+//           margin: 0
+//           input
+//             font-size: 1.2em
+//             outline-color: #282828a4
+//       .topBtn
+//         justify-content: center
+//         .hr
+//           width: 100%
+//         .btn
+//           width: 5em
+//           position: absolute
+//     .bottom
+//       .outdates
+//         p
+//           font-size: 3rem
+//           color: $Off-black
+//           font-style: italic
+//           font-weight: 800
+//           // margin-bottom: 1rem
+//           span
+//             // font-size: 6rem
+//             color: $Purple
+//             margin-right: .2em
+
+
 
 
 
