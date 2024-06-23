@@ -12,7 +12,7 @@ var indate
 
 let currentDate = new date(moment().format("YYYY"),moment().format("MM"),moment().format("DD"))
 console.log(currentDate);
-// console.log(moment('2021-02-30').format("YYYY-MM-DD"));
+console.log(moment('2021-04-31').format("YYYY-MM-DD"));
 console.log('2'.length);
 
 const stringAndCheck = (obj) =>{
@@ -24,7 +24,7 @@ const stringAndCheck = (obj) =>{
   while(d.length < 2 && d!= '') d = '0' + d
   return {
     day:d,
-    month1:m,
+    month:m,
     year:y
   }
 }
@@ -94,7 +94,8 @@ const checkDay = function(){
     dayLab.children('.err2').css('display','block')
     label.addClass('turnRed')
   }
-  else if(inD.month && inD.year){
+  console.log(`${String(inD.year)}-${String(inD.month)}-${String(inD.day)}`);
+  if(inD.month && inD.year){
     console.log(`${String(inD.year)}-${String(inD.month)}-${String(inD.day)}`);
     if(!(moment(`${String(inD.year)}-${String(inD.month)}-${String(inD.day)}`).format("YYYY-MM-DD").includes('-'))){
       dayLab.children('.err').css('display','none')
